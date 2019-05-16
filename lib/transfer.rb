@@ -19,11 +19,11 @@ class Transfer
       receiver.balance += amount
       @status = "complete"
     else
-      reject_transert
+      reject_transer
     end
   end
   
-  def reject_transert
+  def reject_tranfer
     @status = "rejected"
     "Transaction rejected. Please check your account balance."
   end
@@ -34,7 +34,7 @@ class Transfer
       sender.balance += amount
       @status = "reversed"
     else
-      reject_transert
+      reject_transer
     end
   end
 end
