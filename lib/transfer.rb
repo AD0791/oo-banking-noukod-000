@@ -20,4 +20,8 @@ class Transfer
       @status = "complete"
     end
   end
+  
+  def reject_transert
+    
+  end
 end
