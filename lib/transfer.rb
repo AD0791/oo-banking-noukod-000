@@ -46,9 +46,9 @@ class Transfer
   
   def execute_transaction
     if valid?  && sender.balance > amount && @status == "complete"
-      sender.balance -= amount
-      receiver.balance += amount
-      @status = "complete"
+      reveiver.balance -= amount
+      sender.balance += amount
+      @status = "reversed"
     else
       reject_transert
     end
