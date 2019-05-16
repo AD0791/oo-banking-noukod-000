@@ -19,7 +19,7 @@ class Transfer
       receiver.balance += amount
       @status = "complete"
     else
-      reject_transer
+      reject_tranfer
     end
   end
   
