@@ -33,5 +33,8 @@ class Transfer
       receiver.balance -= amount
       sender.balance += amount
       @status = "reversed"
+    else
+      reject_transert
+    end
   end
 end
